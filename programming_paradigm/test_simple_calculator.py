@@ -22,7 +22,7 @@ class testclass(unittest.TestCase):
         self.assertEqual(self.calc.multiply(3 , 5) , 15)
         self.assertEqual(self.calc.multiply(78 , 91) , 7098)
 
-    def test_division (self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(10,2), 5)
         self.assertEqual(self.calc.divide(10,7), 10/7)
 
