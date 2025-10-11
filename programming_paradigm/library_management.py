@@ -18,6 +18,13 @@ class Book:
             self.__is_checked_out = True
     def is_check_out(self):
         return self.__is_checked_out 
+    
+    def return_book(self):
+        if not self.__is_checked_out:
+            print(f"the book {self.title} was not borrowed")
+        else:
+            print(f"the book {self.title} has been returned")
+            self.__is_checked_out = False
         
 
 class Library:
